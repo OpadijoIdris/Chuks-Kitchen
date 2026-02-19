@@ -66,9 +66,10 @@ export const getAllOrders = async (req, res) => {
 export const getOrderByStatus = async (req, res) => {
     try {
         req.user = { role: req.body.role };
-        const orders = await orderServices.getOrderByStatus(req.user, req.params.status);
+        const { status } = req.query;
+        const orders = await orderServices.getOrderByStatus(status, req.user);
 
-        if(!orders) {
+        if(!orders || orders.length === 0) {
             throw new Error ("No orders found for the given status")
         }
 
