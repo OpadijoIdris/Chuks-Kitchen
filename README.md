@@ -142,7 +142,7 @@ Expired orders cannot be paid
 
 🚀 How To Run The Project
 1️⃣ Clone Repository
-git clone <your-repo-url>
+git clone 
 cd your-project
 
 2️⃣ Install Dependencies
