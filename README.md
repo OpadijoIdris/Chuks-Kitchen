@@ -160,7 +160,7 @@ Install dev dependencies and run tests:
 
 ```bash
 npm install
-npm test
+npm run dev
 ```
 
 Tests run using an in-memory SQLite database (no external DB required).
