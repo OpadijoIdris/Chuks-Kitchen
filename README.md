@@ -1,5 +1,5 @@
-🍽️ Food Ordering Backend API
-📌 Project Overview
+                    🍽️ Food Ordering Backend API
+                        📌 Project Overview
 
 This is a RESTful backend API for a food ordering system built with Node.js, Express, and Sequelize ORM.
 
@@ -21,7 +21,7 @@ Revenue monitoring (Admin)
 
 The application enforces secure business rules and demonstrates a complete order lifecycle.
 
-🛠️ Tech Stack
+                    🛠️ Tech Stack
 
 Node.js
 
@@ -29,18 +29,15 @@ Express.js
 
 Sequelize ORM
 
-MySQL / PostgreSQL (depending on your setup)
+SQlite
 
 UUID for primary keys
 
-JWT Authentication (if implemented)
-
-🧱 System Architecture
+                    🧱 System Architecture
 
 The system follows a layered architecture:
 
 Controller → Service → Model → Database
-
 
 Controllers handle HTTP requests and responses
 
@@ -50,14 +47,14 @@ Models define database structure
 
 Database stores persistent data
 
-🔗 Database Relationships
-User
+                    🔗 Database Relationships
+                User
 
 A User can have many Orders
 
 A User can have many OTP records
 
-Order
+                Order
 
 Belongs to a User
 
@@ -71,7 +68,7 @@ Belongs to an Order
 
 Belongs to a Food item
 
-Food
+                Food
 
 Can exist independently
 
@@ -81,7 +78,7 @@ Payment
 
 Belongs to an Order
 
-🔄 Order Lifecycle
+                🔄 Order Lifecycle
 
 User creates order → pending
 
@@ -97,8 +94,8 @@ Expired unpaid orders → cancelled
 
 This ensures transactional integrity and accurate financial tracking.
 
-📦 API Endpoints
-👤 User Endpoints
+                    📦 API Endpoints
+                👤 User Endpoints
 
 POST /api/users/signup
 
@@ -106,7 +103,7 @@ POST /api/users/verify-otp
 
 POST /api/users/login
 
-🍛 Food Endpoints
+                🍛 Food Endpoints
 
 POST /api/foods (Admin)
 
@@ -118,7 +115,7 @@ GET /api/foods
 
 GET /api/foods/:id
 
-🛒 Order Endpoints
+                🛒 Order Endpoints
 
 POST /api/orders
 
@@ -126,11 +123,11 @@ GET /api/orders (Admin)
 
 GET /api/orders/my-orders
 
-💳 Payment Endpoints
+                💳 Payment Endpoints
 
 POST /api/payments/:orderId
 
-🛡️ Authorization Rules
+                🛡️ Authorization Rules
 
 Only Admin can create/update/delete food
 
@@ -140,7 +137,7 @@ Only Admin can view all orders
 
 Expired orders cannot be paid
 
-🚀 How To Run The Project
+                🚀 How To Run The Project
 1️⃣ Clone Repository
 git clone 
 cd your-project
